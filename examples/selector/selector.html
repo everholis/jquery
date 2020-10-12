@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<script type="text/javascript" src="../../data/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+    $("h3").css("color","darkorange");      // tag selector
+    $("h3.my_class").css("color","purple"); // tag-class combination selector
+    $(".my_class").css("color","blue");     // class selector
+    $("#my_id").css("color", "red" );       // id selctor, this is same as 'document.getElementById("id")'
+
+});
+
+</script>
+
+<h3>tag selector test</h3>
+<hr>
+<h3 class="my_class">class selector combination test</h3>
+<hr>    
+<h4 class="my_class">class selector</h4>
+<hr>  
+<h3 id="my_id">id selector test</h3>
+
+
+</body>
+</html>
+
+
