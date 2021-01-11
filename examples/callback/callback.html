@@ -10,12 +10,25 @@
 <script type="text/javascript">
 
 
-$(document).ready(function(){
-    //callback function
-    alert("im callback")
-    
-  
+// jQuery(callback) == $(callback) == $(document).ready(callback)
+
+jQuery(function() {
+    alert("im jQuery(callback)")
 });
+
+$(function() {
+    alert("im $(callback)")
+});
+
+$(document).ready(function(){
+    alert("im  $(document).ready(callback)")
+});
+
+jQuery(document).ready(function() {
+    alert("im  jQuery(document).ready(callback)")
+});
+
+
 
 </script>
 
